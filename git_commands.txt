@@ -1,0 +1,60 @@
+GIT COMMANDS USED IN THIS ASSIGNMENT
+====================================
+
+git init
+Creates a new, empty Git repository in the current folder.
+
+git branch -M main
+Renames the current branch to "main".
+
+git add <file>
+Puts the chosen file in the staging area, ready for the next commit.
+
+git commit -m "message"
+Saves the staged changes as a commit, labelled with the given message.
+
+git branch feature
+Creates a new branch called "feature".
+
+git switch feature
+Moves the working directory onto the feature branch.
+
+git switch main
+Moves the working directory back onto the main branch.
+
+git merge --no-ff feature -m "message"
+Merges feature into the current branch and always records a merge commit,
+so the branching stays visible in the history.
+
+git log --oneline --graph --decorate --all
+Prints a compact commit history as a graph, with branch names and merges.
+
+git status --short
+Gives a brief list of modified, staged and untracked files.
+
+git check-ignore <file>
+Tells whether a file or folder is ignored and which rule matched.
+
+git status
+Shows the full state of the working tree and staging area.
+
+git revert --no-edit HEAD
+Adds a new commit that cancels the changes of the latest commit.
+
+git remote add origin <URL>
+Links the local repository to a GitHub repository named "origin".
+
+git remote -v
+Lists the remote URLs that are configured.
+
+git push -u origin main
+Uploads main to GitHub and sets it as the default upstream branch.
+
+git push -u origin feature
+Uploads the feature branch to GitHub and sets its upstream.
+
+Shell commands used alongside Git:
+mkdir <name>   - creates a folder.
+echo "text" > <file>  - writes text into a file.
+ls             - lists the files in the folder.
+cat <file>     - prints the contents of a file.
